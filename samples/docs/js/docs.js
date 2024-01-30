@@ -21,7 +21,7 @@ function addPage(page, book) {
 	var element = $('<div />', {});
 
 	if (book.turn('addPage', element, page)) {
-		if (page<60) {
+		if (page<64) {
 			element.html('<div class="gradient"></div><div class="loader"></div>');
 			loadPage(page);
 		}
